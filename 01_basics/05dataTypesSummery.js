@@ -1,30 +1,55 @@
-// IS JS DYNAMIC  TYPED OR STATIC TYPED ?
+// // IS JS DYNAMIC  TYPED OR STATIC TYPED ?
 
-//primitive Data Type
+// //primitive Data Type
 
-/* 7 Types : String,
-             Number,
-             boolean
-             null
-             undefined
-             Symbol
-             BigInt 
+// /* 7 Types : String,
+//              Number,
+//              boolean
+//              null
+//              undefined
+//              Symbol
+//              BigInt 
 
 
 
-reference Data Type(non primitive)
+// reference Data Type(non primitive)
 
-    array
-    objects 
-    Function
-*/
+//     array
+//     objects 
+//     Function
+// */
 
-const score = 100
-const scoreValue = 100.3
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail ;
-const id = Symbol('123')
-const anotherId = Symbol('123')
+// const score = 100
+// const scoreValue = 100.3
+// const isLoggedIn = false
+// const outsideTemp = null
+// let userEmail ;
+// const id = Symbol('123')
+// const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
+//   +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Stack(primitive) and heap(non-primitive) memorys
+
+let myName = "Deepak"
+let anotherName = myName
+console.log(myName);
+anotherName = "lappusasachin"
+console.log(anotherName);
+
+
+  let userOne = {
+    email: "qwer@123.com",
+    upi: "user@ybl"
+
+  }
+  let userTwo = userOne
+  userTwo.email = "ANY@google.com"
+  userTwo.upi = "any@ybl"
+  
+//   console.log(userTwo.email);
+//   console.log(userTwo.upi);
+  console.log(userOne.upi);
+  console.log(userOne.email);
