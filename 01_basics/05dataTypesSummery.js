@@ -31,7 +31,13 @@
 //   +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-// Stack(primitive) and heap(non-primitive) memorys
+/* Stack(primitive)=: we always get copy 
+of declared variable
+
+and heap(non-primitive) memorys -: we always get 
+refernce of original value 
+
+*/
 
 let myName = "Deepak"
 let anotherName = myName
